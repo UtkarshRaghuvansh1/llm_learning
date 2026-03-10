@@ -47,3 +47,47 @@ response = client.chat.completions.create(
 
 print(response.choices[0].message.content)
 ```
+
+## System Prompt vs User Prompt
+
+In chat-based Large Language Models (LLMs) like ChatGPT or Llama, prompts are structured using different **roles**. The two most important roles are **System Prompt** and **User Prompt**.
+
+---
+
+### 1. System Prompt
+
+A **System Prompt** defines the behavior, personality, and rules that the AI should follow during the conversation.
+
+It tells the AI:
+- Who it is
+- How it should respond
+- What style or format to use
+- Any restrictions or guidelines
+
+#### Example
+
+- You are a helpful AI tutor who explains programming concepts in simple language.
+
+
+This instruction controls how the AI will respond to user questions.
+
+---
+
+### 2. User Prompt
+
+A **User Prompt** is the actual input or question provided by the user.
+
+#### Example
+- Explain what a Python list is.
+
+
+The AI will respond to this question while following the behavior defined in the **System Prompt**.
+
+---
+
+### Example Together
+
+#### System Prompt
+- You are a senior software engineer who explains concepts to beginners.
+#### User Prompt
+- Explain what machine learning is.
